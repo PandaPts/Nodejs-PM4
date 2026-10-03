@@ -1,0 +1,13 @@
+{
+  "name": "lab-2-task-5",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Лабораторная работа 2, вариант 1, задание 5",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "chalk": "4.1.2"
+  }
+}

@@ -1,0 +1,2 @@
+Node.js streams process data in chunks.
+This text is used to demonstrate open, data, and end events.

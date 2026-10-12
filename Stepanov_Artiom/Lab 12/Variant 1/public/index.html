@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Медиа-галерея</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <p class="eyebrow">Лабораторная работа 12 · Вариант 1</p>
+        <h1>Медиа-галерея</h1>
+        <p>Изображения и аудио загружаются с сервера потоками.</p>
+      </header>
+
+      <!-- Задание 3: три изображения запрашиваются из папки public/images. -->
+      <section aria-labelledby="gallery-title">
+        <h2 id="gallery-title">Галерея изображений</h2>
+        <div class="gallery">
+          <figure class="card">
+            <img src="/images/mountain.svg" alt="Солнце над горным озером">
+            <figcaption>Горное озеро</figcaption>
+          </figure>
+          <figure class="card">
+            <img src="/images/night.svg" alt="Звёздное небо над холмами">
+            <figcaption>Звёздная ночь</figcaption>
+          </figure>
+          <figure class="card">
+            <img src="/images/waves.svg" alt="Слои волн в синих оттенках">
+            <figcaption>Морские волны</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Задание 4: аудиоплеер получает MP3 отдельным HTTP-потоком. -->
+      <section class="audio-card" aria-labelledby="audio-title">
+        <h2 id="audio-title">Аудио-превью</h2>
+        <p>Короткий звуковой фрагмент передаётся отдельным потоком.</p>
+        <audio controls preload="metadata">
+          <source src="/audio-preview.mp3" type="audio/mpeg">
+          Ваш браузер не поддерживает аудио.
+        </audio>
+      </section>
+    </main>
+  </body>
+</html>
